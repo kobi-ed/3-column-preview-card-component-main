@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@500&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1440px;
+    /* width: 80%; */
+    margin: 20px auto;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 200px;
+    flex-flow: column;
+    width: 50%;
+    padding: 3rem;
+}
+
+.flex-item p {
+    flex: 1;
+}
+
+.grid-image {
+    width: 5rem;
+    height: auto;
+}
+
+.item-head {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.item-info {
+    margin: 2rem 0 8rem 0;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+a.item-button {
+    font-size: 16px;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    color: none;
+    mix-blend-mode: screen ;
+    width: 10rem;
+    background: hsl(0, 0%, 95%);
+    border-radius: 1.8rem;
+    text-align: center;
+    padding: 0.8rem;
+    border: 2px solid hsl(0, 0%, 100%, 0.75);
+    margin-bottom: 2rem;
+    transition-duration: 0.4s;
+}
+
+a.item-button:hover {
+    cursor: pointer;
+    background-color: inherit;
+    color: hsl(0, 0%, 95%);
+}
+
+.sedan {
+    background: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+    
+}
+
+/* Mobile view */
+@media only screen and (max-width: 481px) {
+
+    .flex-container {
+        max-width: 375px;
+    }
+
+    .sedan {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0.5rem;        
+        border-bottom-left-radius: 0.5rem;
+    }
+}
+
+/* On smaller screens
+@media only screen and (max-width: 481px) {
+
+    .sedan {
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    }
+} */
